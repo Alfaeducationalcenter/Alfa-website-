@@ -48,7 +48,7 @@ body{font-family:Arial,sans-serif;background:#f8fafc;color:#1e293b}
 <div style="font-size:24px">☰</div>
 </div>
 
-<!-- BANNER NDEFU 420px - PICHA TU -->
+
 <div class="banner">
 <img id="slideImg" src="slide1.jpg" onerror="this.src='logo-hd.jpg'">
 <div id="slideCap" class="cap">Wanafunzi wa ALFA - Mazingira Bora ya Kujifunzia</div>
@@ -64,7 +64,61 @@ body{font-family:Arial,sans-serif;background:#f8fafc;color:#1e293b}
 <div class="input"><select id="lvl"><option>Choose level</option><option>Pre-Form One</option><option>Form II-IV (O-Level)</option><option>Form V-VI (A-Level)</option></select></div>
 <label class="label">BROWSE ALL PROGRAMMES*</label>
 <div class="input"><input id="prog" placeholder="Type your programme..."></div>
-<button class="search-btn" onclick="alert('Karibu ALFA! Wasiliana WhatsApp 0756 457 470 kwa '+document.getElementById('lvl').value)">🔍 SEARCH</button>
+<button class="search-btn" onclick="alert('Karibu ALFA! Wasiliana WhatsApp 0756 457 470 kwa '+document.<!-- BANNER - KILA PICHA NA MANENO YAKE KAMA BROCHURE -->
+<div class="banner" style="position:relative;width:100%;height:430px;overflow:hidden;background:#000">
+  
+  <!-- SLIDE 1 - WALIMU -->
+  <div class="mySlide" style="display:block;position:relative;width:100%;height:430px">
+    <img src="slide3.jpg" style="width:100%;height:430px;object-fit:cover">
+    <div style="position:absolute;bottom:0;left:0;right:0;background:white;padding:10px 12px;text-align:left">
+      <div style="background:#ff8c00;color:white;padding:2px 8px;border-radius:4px;display:inline-block;font-size:10px;font-weight:bold">PAGE 1</div>
+      <h3 style="color:#0f2a5a;font-size:15px;margin-top:4px">UONGOZI NA WALIMU WENYE UZOEFU</h3>
+      <p style="font-size:11px;color:#475569;margin-top:2px">Walimu wetu mahiri wenye uzoefu wa kufundisha na kulea wanafunzi kwa upendo.</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 - WANAFUNZI -->
+  <div class="mySlide" style="display:none;position:relative;width:100%;height:430px">
+    <img src="slide1.jpg" style="width:100%;height:430px;object-fit:cover">
+    <div style="position:absolute;bottom:0;left:0;right:0;background:white;padding:10px 12px;text-align:left">
+      <div style="background:#ff8c00;color:white;padding:2px 8px;border-radius:4px;display:inline-block;font-size:10px;font-weight:bold">PAGE 2</div>
+      <h3 style="color:#0f2a5a;font-size:15px;margin-top:4px">WANAFUNZI WETU - NIDHAMU</h3>
+      <p style="font-size:11px;color:#475569;margin-top:2px">Wanafunzi wenye nidhamu, bidii na maadili na elimu bora.</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 - MAZINGIRA BORA -->
+  <div class="mySlide" style="display:none;position:relative;width:100%;height:430px">
+    <img src="slide2.jpg" style="width:100%;height:430px;object-fit:cover">
+    <div style="position:absolute;bottom:0;left:0;right:0;background:white;padding:10px 12px;text-align:left">
+      <div style="background:#ff8c00;color:white;padding:2px 8px;border-radius:4px;display:inline-block;font-size:10px;font-weight:bold">PAGE 3</div>
+      <h3 style="color:#0f2a5a;font-size:15px;margin-top:4px">MAZINGIRA BORA YA KUJIFUNZIA</h3>
+      <p style="font-size:11px;color:#475569;margin-top:2px">Madarasa ya kisasa yenye madawati ya kutosha na mazingira safi yanayochochea kujifunza. MASOMO YA PRE-FORM ONE 2026 yamefunguliwa.</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 - MKURUGENZI / WASILIANA -->
+  <div class="mySlide" style="display:none;position:relative;width:100%;height:430px">
+    <img src="mkurugenzi.jpg" style="width:100%;height:430px;object-fit:cover">
+    <div style="position:absolute;bottom:0;left:0;right:0;background:#0f2a5a;color:white;padding:10px 12px">
+      <h3 style="font-size:14px">WASILIANA NASI</h3>
+      <p style="font-size:11px;margin-top:4px">CONTACT: 0756 457 470 | EMAIL: alfaeducationalcenter@gmail.com<br>LOCATION: Mhangu B s/m Singi, Salawe-Shinyanga</p>
+      <p style="font-size:10px;margin-top:4px;color:#ffb84d">MOTTO: Education for training mind to think<br>Karibuni Sana - Elimu ni Msingi</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let idx=0;
+let slides=document.getElementsByClassName("mySlide");
+function show(){
+ for(let i=0;i<slides.length;i++) slides[i].style.display="none";
+ idx=(idx+1)%slides.length;
+ slides[idx].style.display="block";
+}
+setInterval(show,4000);
+</script>getElementById('lvl').value)">🔍 SEARCH</button>
 </div>
 
 <div class="section">
