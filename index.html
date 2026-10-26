@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALFA EDUCATIONAL CENTER (AEC) Salawe-Shinyanga</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f8fafc}
+.top{background:#a00c2e;color:white;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.header{background:white;padding:12px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.header img{width:60px;height:60px;border-radius:50%;border:3px solid #c9a23a;object-fit:cover}
+/* HAPA NDIPO TUMEREKEBISHA - HAKUNA NAFASI NYEUPE */
+.banner{position:relative;width:100%;background:#000;line-height:0}
+.banner img{width:100%;height:auto;max-height:500px;object-fit:cover;display:block}
+.caption-box{position:absolute;left:12px;right:12px;bottom:14px;background:rgba(0,0,0,0.8);padding:12px 14px;border-radius:12px;z-index:5;line-height:1.4}
+.box{max-width:1100px;margin:auto;padding:20px 16px}
+.card{background:white;padding:18px;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);margin-bottom:14px}
+.find{background:white;margin:16px 16px 20px;padding:22px;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.14);max-width:1100px}
+@media(min-width:1100px){.find{margin:16px auto 20px}}
+.input{background:#faf6f0;border:1px solid #e8ddd0;padding:12px;border-radius:12px}
+.input select,.input input{width:100%;border:none;background:transparent;outline:none;font-size:14px}
+.btn{background:#a00c2e;color:white;width:100%;padding:14px;border:none;border-radius:25px;font-weight:bold;margin-top:14px}
+.subjects{background:#fff8e6;border:1px dashed #c9a23a;padding:14px;border-radius:12px;margin-top:12px;display:none}
+.subjects span{display:inline-block;background:#0f2a4a;color:white;padding:5px 10px;border-radius:15px;font-size:11px;margin:4px 4px 0 0}
+.footer{background:#0f2a4a;color:white;padding:24px 16px}
+.footer2{background:#081a3a;color:#94a3b8;padding:16px;text-align:center;font-size:11px}
+</style>
+</head>
+<body>
+
+<div class="top">
+<div>📞 0756 457 470 | ✉️ alfaeducationalcenter@gmail.com</div>
+<a href="https://wa.me/255756457470" style="background:#c9a23a;color:#000;padding:8px 16px;border-radius:20px;text-decoration:none;font-weight:bold">🎓 APPLY HERE</a>
+</div>
+
+<div class="header">
+<img src="logo-hd.jpg" onerror="this.src='https://via.placeholder.com/60'">
+<div><b style="font-size:17px;color:#0f2a4a">ALFA EDUCATIONAL CENTER</b><br><b style="color:#a00c2e;font-size:13px">(AEC) Salawe-Shinyanga.</b></div>
+</div>
+
+<!-- PICHA + MANENO NDANI YA PICHA - SASA HAKUNA NAFASI NYEUPE -->
+<div class="banner">
+<img id="slideImg" src="slide1.jpg" onerror="this.src='slide2.jpg'">
+<div class="caption-box">
+<span id="badge" style="background:#ff8c00;color:white;padding:4px 10px;border-radius:5px;font-size:10px;font-weight:bold">MAZINGIRA</span>
+<h3 id="title" style="color:#ffcc00;font-size:14px;margin-top:7px">MAZINGIRA BORA YA KUJIFUNZIA</h3>
+<p id="desc" style="font-size:12px;color:#fff;margin-top:4px">Madarasa ya kisasa yenye madawati ya kutosha na mazingira safi.</p>
+</div>
+</div>
+
+<div class="find">
+<div style="display:flex;gap:12px;align-items:center">
+<div style="width:50px;height:50px;background:#a00c2e;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white">🔍</div>
+<div><h2 style="color:#0f2a4a">Find your programs</h2><p style="font-size:13px;color:#64748b">Chagua level uone masomo</p></div>
+</div>
+<p style="font-weight:bold;font-size:11px;margin:14px 0 6px">WHAT DO YOU WANT TO LEARN?</p>
+<div class="input"><select id="lvl" onchange="showSubjects()"><option value="">Choose level</option><option value="pre">Pre Form One</option><option value="o">Form II-IV</option><option value="a">Form V-VI</option></select></div>
+<div id="subjectsBox" class="subjects"><h4 id="subTitle" style="color:#a00c2e">Masomo:</h4><div id="subList" style="margin-top:6px"></div></div>
+<p style="font-weight:bold;font-size:11px;margin:14px 0 6px">BROWSE ALL PROGRAMMES*</p>
+<div class="input"><input placeholder="Type your programme..."></div>
+<button class="btn" onclick="showSubjects()">🔍 SEARCH & ONA MASOMO</button>
+</div>
+
+<div class="box">
+<div class="card"><h3>About ALFA</h3><p style="margin-top:6px;font-size:14px">Alfa ni kituo bora kwa ajili ya kumuandaa mwanafunzi kwa hatua nyingine ya masomo, kielimu, tabia, uongozi, ujuzi na ugunduzi wa vitu vipya pamoja na kuendeleza kizazi.</p></div>
+<div class="card" style="border-left:5px solid #a00c2e"><h3>🎯 Mission</h3><p>To build ability, creativity and knowledge.</p></div>
+<div class="card"><h3>👁️ Vision</h3><p>Academic Excellence - Student Experience - Admissions - Why Choose Us - Vibrant, friendly community</p></div>
+<div class="card"><h3>🏛️ Background</h3><p>Kuanzishwa 2023 Mhangu B shule ya msingi, Salawe-Shinyanga.</p></div>
+<div class="card"><h3>Message from Mkurugenzi</h3><p><b>Ndg. MWL. EMMANUEL MASHAURY SHINJE</b><br><i>Karibu sana ALFA EDUCATIONAL CENTER (AEC) Salawe-Shinyanga.</i></p></div>
+</div>
+
+<div class="footer"><p>📍 Location: Mhangu B, Salawe-Shinyanga | 📞 Quick contact: 0756 457 470</p></div>
+<div class="footer2">© 2026 ALFA EDUCATIONAL CENTER (AEC) Salawe-Shinyanga</div>
+
+<script>
+const slides=[
+ {img:"slide1.jpg", badge:"WANAFUNZI", title:"WANAFUNZI WETU", desc:"Wanafunzi wenye nidhamu, bidii na maadili."},
+ {img:"slide2.jpg", badge:"MAZINGIRA", title:"MAZINGIRA BORA YA KUJIFUNZIA", desc:"Madarasa ya kisasa yenye madawati ya kutosha na mazingira safi."},
+ {img:"slide3.jpg", badge:"WALIMU", title:"UONGOZI NA WALIMU WENYE UZOEFU", desc:"Walimu wetu mahiri wenye uzoefu."},
+ {img:"mkurugenzi.jpg", badge:"MKURUGENZI", title:"Ndg. MWL. EMMANUEL MASHAURY SHINJE", desc:"Mkurugenzi wa ALFA EDUCATIONAL CENTER."}
+];
+let i=0;
+setInterval(()=>{
+ i=(i+1)%slides.length;
+ document.getElementById("slideImg").src=slides[i].img;
+ document.getElementById("badge").innerText=slides[i].badge;
+ document.getElementById("title").innerText=slides[i].title;
+ document.getElementById("desc").innerText=slides[i].desc;
+},3500);
+function showSubjects(){
+ let lvl=document.getElementById("lvl").value;
+ let box=document.getElementById("subjectsBox");
+ let title=document.getElementById("subTitle");
+ let list=document.getElementById("subList");
+ if(!lvl){box.style.display="none";return;}
+ box.style.display="block";
+ if(lvl=="pre"){title.innerText="Pre Form One - Masomo:";list.innerHTML="<span>Basic Mathematics</span><span>Physics</span><span>Biology</span><span>Chemistry</span><span>Kiswahili</span><span>Geography</span><span>History</span><span>English</span><span>Historia ya Tanzania na Maadili</span><span>Business Studies</span>";}
+ else if(lvl=="o"){title.innerText="Form II-IV - Masomo:";list.innerHTML="<span>Basic Mathematics</span><span>Physics</span><span>Biology</span><span>Chemistry</span><span>Kiswahili</span><span>Geography</span><span>History</span><span>English</span>";}
+ else if(lvl=="a"){title.innerText="Form V-VI - Combination:";list.innerHTML="<span>CBG</span><span>PCB</span><span>HKL</span><span>HGK</span><span>HGL</span><span>PCM</span>";}
+}
+</script>
+</body>
+</html>
