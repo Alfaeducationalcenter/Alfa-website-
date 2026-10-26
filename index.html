@@ -68,6 +68,49 @@ nav{background:#0f2a5a;color:white;padding:14px 24px;display:flex;justify-conten
 
   <div class="dots"><div class="dot active" onclick="goSlide(0)"></div><div class="dot" onclick="goSlide(1)"></div><div class="dot" onclick="goSlide(2)"></div><div class="dot" onclick="goSlide(3)"></div></div>
 </div>
+  <!-- SLIDESHOW PICHA PEKEE - HAKUNA MANENO JUU -->
+<div style="position:relative;max-width:1100px;margin:auto;background:#0f2a5a;border-radius:12px;overflow:hidden">
+  <div class="mySlides" style="display:block">
+    <img src="slide1.jpg" style="width:100%;height:450px;object-fit:cover">
+    <div style="background:rgba(15,42,90,0.9);color:white;padding:12px;text-align:center;font-size:13px">📸 Wanafunzi wa ALFA - Mazingira Bora ya Kujifunzia</div>
+  </div>
+  <div class="mySlides" style="display:none">
+    <img src="slide2.jpg" style="width:100%;height:450px;object-fit:cover">
+    <div style="background:rgba(15,42,90,0.9);color:white;padding:12px;text-align:center;font-size:13px">📚 Darasa la Kisasa - Wanafunzi Wakifanya Mitihani</div>
+  </div>
+  <div class="mySlides" style="display:none">
+    <img src="mkurugenzi.jpg" style="width:100%;height:450px;object-fit:cover">
+    <div style="background:rgba(15,42,90,0.9);color:white;padding:12px;text-align:center;font-size:13px">🎓 Mkurugenzi - Ndg. MWL. EMMANUEL MASHAURY SHINJE</div>
+  </div>
+  <div class="mySlides" style="display:none">
+    <img src="slide3.jpg" style="width:100%;height:450px;object-fit:cover">
+    <div style="background:rgba(15,42,90,0.9);color:white;padding:12px;text-align:center;font-size:13px">👨‍🏫 Walimu Mahiri wa ALFA</div>
+  </div>
+</div>
+
+<!-- MANENO YAKO YAKO PEKE YAKE CHINI YA PICHA -->
+<div style="max-width:1100px;margin:20px auto;padding:30px 20px;background:white;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06);text-align:center">
+  <span style="background:#fff7ed;color:#d97706;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:bold">ALFA EDUCATIONAL CENTER (AEC) Salawe-Shinyanga</span>
+  <h1 style="color:#0f2a5a;font-size:36px;margin-top:15px;line-height:1.2">Building Minds to <span style="color:#ffb84d">Think</span><br>Shaping Future Leaders</h1>
+  <p style="max-width:700px;margin:15px auto;color:#475569">Alfa ni kituo bora kwa ajili ya kumuandaa mwanafunzi kwa hatua nyingine ya masomo, kielimu, tabia, uongozi, ujuzi na ugunduzi wa vitu vipya pamoja na kuendeleza kizazi.</p>
+  <div style="margin-top:20px">
+    <a href="#programs" style="background:#ffb84d;color:#0f2a5a;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:bold;margin:5px;display:inline-block">Find Your Programs →</a>
+    <a href="#director" style="background:#0f2a5a;color:white;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:bold;margin:5px;display:inline-block">About the Director</a>
+  </div>
+</div>
+
+<script>
+let slideIndex=0;
+function showSlides(){
+ let slides=document.getElementsByClassName("mySlides");
+ for(let i=0;i<slides.length;i++){slides[i].style.display="none"}
+ slideIndex++;
+ if(slideIndex>slides.length){slideIndex=1}
+ slides[slideIndex-1].style.display="block";
+ setTimeout(showSlides,4000);
+}
+showSlides();
+</script>
 
 <!-- ABOUT ALFA -->
 <div class="section" id="about">
